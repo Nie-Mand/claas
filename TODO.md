@@ -1,3 +1,3 @@
-- add CI/CD Support for the project
+- add CI/CD for the project
 - add other HTML Elements
 - add the use of custom ClassNames based on props
