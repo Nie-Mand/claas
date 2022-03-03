@@ -8,7 +8,7 @@ I always liked to use Tailwind and wanted to extend it to use it to build as a D
 Simply, **Claas** is just a HOC that adds the provided className to the component. just like `styled-components`. There is also default components to be used like `claas.div` and `claas.button`. to be added more in the future. and of course there is `claas.custom` that will accept a component and continue the process.
 
 ### Usage
-```ts
+```tsx
 import claas from 'claas'
 
 const Button = claas.button`bg-blue-400 text-white`
