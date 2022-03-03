@@ -1,6 +1,6 @@
 {
   "name": "claas",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A React Higher Order Component library to assign classNames to components, looks like styled-components",
   "scripts": {
     "build": "rollup -c"

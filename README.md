@@ -11,7 +11,7 @@ npm install claas
 
 ### Usage
 ```tsx
-import { claas } from '@Nie-Mand/claas'
+import { claas } from 'claas'
 
 const Button = claas.button`bg-blue-400`
 

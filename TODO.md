@@ -1,3 +1,4 @@
 - add other HTML Elements
 - add the use of custom ClassNames based on props
 - optimize the build process by killing the dev dependencies
+- Automate Versioning
