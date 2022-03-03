@@ -1,1 +1,1 @@
-export * as default from './lib'
+export * as claas from './lib'
