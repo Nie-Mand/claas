@@ -6,7 +6,7 @@ I always liked to use Tailwind and wanted to extend it to use it to build as a D
 
 ### Installation 
 ```bash
-npm install @Nie-Mand/claas
+npm install claas
 ```
 
 ### Usage
