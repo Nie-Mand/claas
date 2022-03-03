@@ -1,9 +1,6 @@
 {
-  "name": "@Nie-Mand/claas",
+  "name": "claas",
   "version": "1.0.8",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/Nie-Mand"
-  },
   "description": "A React Higher Order Component library to assign classNames to components, looks like styled-components",
   "scripts": {
     "rollup": "rollup -c"
@@ -29,9 +26,5 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Nie-Mand/claas.git"
-  }
+  "types": "dist/index.d.ts"
 }
