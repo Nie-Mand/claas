@@ -1,0 +1,20 @@
+on: push
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: read
+      packages: write 
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@Nie-Mand'
+      - run: npm ci
+      - run: npm run rollup
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,11 +1,8 @@
 # Claas
 A React Higher Order Component library to assign **classNames** to components, looks like styled-components
 
-## Motivation
+## Why
 I always liked to use Tailwind and wanted to extend it to use it to build as a Design System for simple and small projects. I know there is the `@apply` feature and there's `Twin`, but just wanted something simpler.
-
-## Introduction
-Simply, **Claas** is just a HOC that adds the provided className to the component. just like `styled-components`. There is also default components to be used like `claas.div` and `claas.button`. to be added more in the future. and of course there is `claas.custom` that will accept a component and continue the process.
 
 ### Installation 
 ```bash
@@ -35,5 +32,13 @@ function App() {
 
 ```
 
-### Progress
-currently, there is `div`, `button` and `custom`, to add more in the future.
+### API
+- `claas.custom`
+- `claas.button`
+- `claas.div`
+- `claas.h1`
+- `claas.h2`
+- `claas.h3`
+- `claas.h4`
+- `claas.h5`
+- `claas.h6`
