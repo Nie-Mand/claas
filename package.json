@@ -1,0 +1,28 @@
+{
+  "name": "claas",
+  "version": "1.0.0",
+  "description": "A React Higher Order Component library to assign classNames to components, looks like styled-components",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "author": "Nie-Mand",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@types/lodash": "^4.14.179",
+    "@types/react": "^17.0.39",
+    "react": "^17.0.2",
+    "rollup": "^2.69.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ]
+}
