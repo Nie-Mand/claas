@@ -1,3 +1,4 @@
 - add CI/CD for the project
 - add other HTML Elements
 - add the use of custom ClassNames based on props
+- fix the bug with overriding the Classname

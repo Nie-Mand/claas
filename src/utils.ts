@@ -13,7 +13,7 @@ const combineStringLiteral = (
 
 export const generateClassName = (
   className: TemplateStringsArray,
-  values: string[],
+  values: Values,
   classNameThatsBeenAddedLater?: string
 ) => {
   const defaultClassName = combineStringLiteral(className, values).trim()
@@ -24,3 +24,5 @@ export const generateClassName = (
 
   return finalClassName
 }
+
+export type Values = string[]
