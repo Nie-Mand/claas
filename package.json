@@ -18,7 +18,8 @@
     "@types/react": "^17.0.39",
     "react": "^17.0.2",
     "rollup": "^2.69.0",
-    "typescript": "^4.6.2"
+    "rollup-plugin-dts": "^4.1.0",
+    "typescript": "4.5"
   },
   "dependencies": {
     "lodash": "^4.17.21"
@@ -27,5 +28,6 @@
   "module": "dist/esm/index.js",
   "files": [
     "dist"
-  ]
+  ],
+  "types": "dist/index.d.ts"
 }
