@@ -1,13 +1,9 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import React from 'react'
 import { generateClassName, Values } from '../utils'
-
-type Props = DetailedHTMLProps<
-  HTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
->
+import { ButtonProps } from './prop-types'
 
 export function button(_className: TemplateStringsArray, ...values: Values) {
-  return (props: Props) => {
+  return (props: ButtonProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(

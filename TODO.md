@@ -2,3 +2,9 @@
 - add the use of custom ClassNames based on props
 - optimize the build process by killing the dev dependencies
 - Automate Versioning
+- Make the Quality on NPM better
+  - Has README? Has license? Has .gitignore and friends?
+  - Is the version stable (> 1.x.x)? 
+  - Has tests? What's their coverage %? Is the build passing?
+  - Has custom website? Has badges?
+  - Are there linters configured?

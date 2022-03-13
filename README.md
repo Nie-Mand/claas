@@ -42,3 +42,9 @@ function App() {
 - `claas.h4`
 - `claas.h5`
 - `claas.h6`
+
+
+### Types
+- `DivProps`
+- `ButtonProps`
+- `HeadingProps`
