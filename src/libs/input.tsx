@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { InputHTMLAttributes } from 'react'
 import { generateClassName, Values } from '../utils'
-import { InputProps } from './prop-types'
+
+type Props = InputHTMLAttributes<HTMLInputElement>
 
 export function input(
   _className: TemplateStringsArray,
-  ...values: Values<InputProps>
+  ...values: Values<Props>
 ) {
-  return (props: InputProps) => {
+  return (props: Props) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(

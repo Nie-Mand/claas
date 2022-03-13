@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { HTMLProps } from 'react'
 import { generateClassName, Values } from '../utils'
-import { DivProps } from './prop-types'
 
+type Props = HTMLProps<HTMLDivElement>
 export function div(
   _className: TemplateStringsArray,
-  ...values: Values<DivProps>
+  ...values: Values<Props>
 ) {
-  return (props: DivProps) => {
+  return (props: Props) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
