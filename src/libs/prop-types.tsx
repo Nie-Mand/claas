@@ -1,16 +1,9 @@
-import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
+import { HTMLProps } from 'react'
 
-export type DivProps = DetailedHTMLProps<
-  HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->
+export type DivProps = HTMLProps<HTMLDivElement>
 
-export type ButtonProps = DetailedHTMLProps<
-  HTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
->
+export type ButtonProps = HTMLProps<HTMLButtonElement>
 
-export type HeadingProps = DetailedHTMLProps<
-  HTMLAttributes<HTMLHeadingElement>,
-  HTMLHeadingElement
->
+export type HeadingProps = HTMLProps<HTMLHeadingElement>
+
+export type InputProps = HTMLProps<HTMLInputElement>

@@ -17,12 +17,20 @@ const combineStringLiteral = (
   )
 }
 
-export const generateClassName = (
+export function generateClassName<Props>(
   className: TemplateStringsArray,
-  values: Values,
-  classNameThatsBeenAddedLater?: string
-) => {
-  const defaultClassName = combineStringLiteral(className, values).trim()
+  values: Values<Props>,
+  props: Props,
+  classNameThatsBeenAddedLater: string = ''
+) {
+  const generated = values.map(value => {
+    if (typeof value === 'function') {
+      return value(props)
+    }
+    return value
+  })
+
+  const defaultClassName = combineStringLiteral(className, generated).trim()
 
   const finalClassName = classNameThatsBeenAddedLater
     ? `${defaultClassName} ${classNameThatsBeenAddedLater}`
@@ -31,4 +39,4 @@ export const generateClassName = (
   return finalClassName
 }
 
-export type Values = string[]
+export type Values<Props> = (string | ((props: Props) => string))[]

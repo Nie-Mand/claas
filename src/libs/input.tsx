@@ -1,12 +1,12 @@
 import React from 'react'
 import { generateClassName, Values } from '../utils'
-import { ButtonProps } from './prop-types'
+import { InputProps } from './prop-types'
 
-export function button(
+export function input(
   _className: TemplateStringsArray,
-  ...values: Values<ButtonProps>
+  ...values: Values<InputProps>
 ) {
-  return (props: ButtonProps) => {
+  return (props: InputProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
@@ -16,6 +16,6 @@ export function button(
       classNameThatsBeenAddedLater
     )
 
-    return <button className={finalClassName} {...rest} />
+    return <input className={finalClassName} {...rest} />
   }
 }

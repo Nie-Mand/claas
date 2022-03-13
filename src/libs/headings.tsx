@@ -2,13 +2,17 @@ import React, { DetailedHTMLProps, HTMLAttributes } from 'react'
 import { generateClassName, Values } from '../utils'
 import { HeadingProps } from './prop-types'
 
-export function h1(_className: TemplateStringsArray, ...values: Values) {
+export function h1(
+  _className: TemplateStringsArray,
+  ...values: Values<HeadingProps>
+) {
   return (props: HeadingProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
       _className,
       values,
+      props,
       classNameThatsBeenAddedLater
     )
 
@@ -16,13 +20,17 @@ export function h1(_className: TemplateStringsArray, ...values: Values) {
   }
 }
 
-export function h2(_className: TemplateStringsArray, ...values: Values) {
+export function h2(
+  _className: TemplateStringsArray,
+  ...values: Values<HeadingProps>
+) {
   return (props: HeadingProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
       _className,
       values,
+      props,
       classNameThatsBeenAddedLater
     )
 
@@ -30,13 +38,17 @@ export function h2(_className: TemplateStringsArray, ...values: Values) {
   }
 }
 
-export function h3(_className: TemplateStringsArray, ...values: Values) {
+export function h3(
+  _className: TemplateStringsArray,
+  ...values: Values<HeadingProps>
+) {
   return (props: HeadingProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
       _className,
       values,
+      props,
       classNameThatsBeenAddedLater
     )
 
@@ -44,13 +56,17 @@ export function h3(_className: TemplateStringsArray, ...values: Values) {
   }
 }
 
-export function h4(_className: TemplateStringsArray, ...values: Values) {
+export function h4(
+  _className: TemplateStringsArray,
+  ...values: Values<HeadingProps>
+) {
   return (props: HeadingProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
       _className,
       values,
+      props,
       classNameThatsBeenAddedLater
     )
 
@@ -58,13 +74,17 @@ export function h4(_className: TemplateStringsArray, ...values: Values) {
   }
 }
 
-export function h5(_className: TemplateStringsArray, ...values: Values) {
+export function h5(
+  _className: TemplateStringsArray,
+  ...values: Values<HeadingProps>
+) {
   return (props: HeadingProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
       _className,
       values,
+      props,
       classNameThatsBeenAddedLater
     )
 
@@ -72,13 +92,17 @@ export function h5(_className: TemplateStringsArray, ...values: Values) {
   }
 }
 
-export function h6(_className: TemplateStringsArray, ...values: Values) {
+export function h6(
+  _className: TemplateStringsArray,
+  ...values: Values<HeadingProps>
+) {
   return (props: HeadingProps) => {
     const { className: classNameThatsBeenAddedLater, ...rest } = props
 
     const finalClassName = generateClassName(
       _className,
       values,
+      props,
       classNameThatsBeenAddedLater
     )
 

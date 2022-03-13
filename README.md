@@ -13,21 +13,28 @@ npm install claas
 ```tsx
 import { claas } from 'claas'
 
-const Button = claas.button`bg-blue-400`
+const Input = claas.input`
+  bg-blue-400
+  ${props => {
+    if (props.type === 'password') {
+      return 'border-red-400'
+    }
+    return ''
+  }}
+`
 
-const DangerButton = claas.custom(Button)`bg-red-400`
+const Button = claas.button`
+  text-blue-500 font-bold
+`
 
 function App() {
-    return (
-        <div>
-            <Button className="text-white">
-                Hello
-            </Button>
-            <DangerButton>  
-                Danger
-            </DangerButton>
-        </div>
-    )
+  return (
+    <div>
+      <Input type="text" />
+      <Input type="password" />
+      <Button>Submit</Button>
+    </div>
+  )
 }
 
 ```
@@ -42,9 +49,11 @@ function App() {
 - `claas.h4`
 - `claas.h5`
 - `claas.h6`
+- `claas.input`
 
 
 ### Types
 - `DivProps`
 - `ButtonProps`
 - `HeadingProps`
+- `InputProps`
